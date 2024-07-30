@@ -1,0 +1,24 @@
+[33mdefb05a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mhwangjieun[m[33m, [m[1;31morigin/hwangjieun[m[33m)[m HEAD@{0}: checkout: moving from seonwoo to hwangjieun
+[33m59960ea[m[33m ([m[1;32mseonwoo[m[33m)[m HEAD@{1}: commit: 백 연동 test
+[33m0dec432[m[33m ([m[1;31morigin/seonwoo[m[33m)[m HEAD@{2}: checkout: moving from hwangjieun to seonwoo
+[33mdefb05a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mhwangjieun[m[33m, [m[1;31morigin/hwangjieun[m[33m)[m HEAD@{3}: pull origin hwangjieun: Fast-forward
+[33mba11a91[m HEAD@{4}: checkout: moving from seonwoo to hwangjieun
+[33m0dec432[m[33m ([m[1;31morigin/seonwoo[m[33m)[m HEAD@{5}: commit: feat: 홈_보험 알아보기 완성
+[33mba11a91[m HEAD@{6}: merge hwangjieun: Fast-forward
+[33m280a2c8[m HEAD@{7}: checkout: moving from hwangjieun to seonwoo
+[33mba11a91[m HEAD@{8}: pull origin hwangjieun: Fast-forward
+[33m50bad73[m HEAD@{9}: checkout: moving from seonwoo to hwangjieun
+[33m280a2c8[m HEAD@{10}: commit: feat: 로그인, 회원가입 FE 추가
+[33m303ad7a[m HEAD@{11}: commit: fix: 프론트 머지 오류 해결
+[33m50bad73[m HEAD@{12}: merge hwangjieun: Fast-forward
+[33mb3f7b72[m HEAD@{13}: checkout: moving from hwangjieun to seonwoo
+[33m50bad73[m HEAD@{14}: checkout: moving from seonwoo to hwangjieun
+[33mb3f7b72[m HEAD@{15}: commit: feat: 홈_보험 알아보기 페이지 연결 완료
+[33md04cb47[m HEAD@{16}: commit: feat: 홈_보험 알아보기 추가
+[33m205578e[m HEAD@{17}: commit: feat: 홈_보험 등록 기능 추가
+[33ma89cd07[m HEAD@{18}: commit: 홈_여행 등록 기능 완료
+[33mcc036c0[m HEAD@{19}: commit: feat: 홈_여행 후 기능 추가
+[33mb85179b[m HEAD@{20}: commit: feat: 홈_ 여행 등록 기능 추가
+[33ma3bddb5[m HEAD@{21}: commit: build: React 설치
+[33mb2ef75c[m HEAD@{22}: checkout: moving from main to seonwoo
+[33m4e436b3[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m HEAD@{23}: clone: from https://github.com/minsihihi/MediCarrier.git
