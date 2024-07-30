@@ -124,7 +124,7 @@ const SetCountry = () => {
           style={{ border: 0, backgroundColor: "transparent" }}
           onClick={() => navigate("/")}
         >
-          <img src="/img/arrow-left.svg" alt="back" />
+          <img src="/img/arrow-left.svg" alt="back-icon" />
         </button>
         내 여행
       </Header>
