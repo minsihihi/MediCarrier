@@ -7,22 +7,22 @@ const useTripStore = create((set) => ({
   country: "",
   startDate: null,
   endDate: null,
-  insuranceType: "",
   setCountry: (country) => set({ country }),
   setStartDate: (startDate) => set({ startDate }),
   setEndDate: (endDate) => set({ endDate }),
   setDates: (startDate, endDate) => set({ startDate, endDate }),
-  setInsuranceType: (type) => set({ insuranceType: type }),
 }));
-
+//const handleSubmit = async (event) => {
+//event.preventDefault();
+//try {
+//  const response = await axios.post('http://127.0.0.1:8000/api/login', {
+//    username,
+//  password,
+//});
+// 백 api 연결
 const onPost = async () => {
   // Zustand에서 상태 가져오기
-<<<<<<< HEAD
-  const { country, startDate, endDate, insuranceType } = useTripStore.getState();
-=======
-  const { country, startDate, endDate, insuranceType } =
-    useTripStore.getState();
->>>>>>> 6ad88bf29db11b3feaebe9a469ae621e031c47da
+  const { country, startDate, endDate } = useTripStore.getState();
 
   // 로컬 스토리지에서 사용자 ID 가져오기
   const userId = localStorage.getItem("userId");
@@ -32,14 +32,13 @@ const onPost = async () => {
     country: country,
     start_date: startDate,
     end_date: endDate,
-    insuranceType: insuranceType, // 보험 정보 추가
     user: userId, // 사용자 ID 추가
   };
 
   try {
     const response = await axios({
       method: "POST",
-      url: "https://minsi.pythonanywhere.com/medicarrier/register.trip/",
+      url: "http://127.0.0.1:8000/medicarrier/register.trip/",
       data: tripData,
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`, // 인증 토큰
@@ -62,7 +61,7 @@ const onGet = async () => {
     const userId = localStorage.getItem("userId");
 
     // GET 요청을 보낼 URL
-    const url = `https://minsi.pythonanywhere.com/medicarrier/register.trip/`;
+    const url = `http://127.0.0.1:8000/medicarrier/register.trip?user=${userId}`;
 
     const response = await axios({
       method: "GET",
@@ -73,18 +72,7 @@ const onGet = async () => {
       },
     });
 
-    const data = response.data;
-
-    // 상태 업데이트
-    if (data && data.length > 0) {
-      const tripData = data[0];
-      useTripStore.getState().setCountry(tripData.country);
-      useTripStore.getState().setStartDate(tripData.start_date);
-      useTripStore.getState().setEndDate(tripData.end_date);
-      useTripStore.getState().setInsuranceType(tripData.insuranceType); // 보험 정보 업데이트
-    }
-
-    return data; // 성공 시 데이터 반환
+    return response.data; // 성공 시 데이터 반환
   } catch (error) {
     console.error(
       "오류:",
@@ -93,6 +81,5 @@ const onGet = async () => {
     return null; // 오류 발생 시 null 반환
   }
 };
-
 export default useTripStore;
 export { onPost, onGet };

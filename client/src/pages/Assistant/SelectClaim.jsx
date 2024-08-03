@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation} from "react-router-dom";
 import styled from "styled-components";
 import ProgressIndicator from "../../components/ProgressIndicator";
 import axios from "axios";
@@ -11,6 +11,7 @@ const PageContainer = styled.div`
   height: 100vh;
   background: #fafafa;
   overflow-y: auto;
+
 `;
 
 const Container = styled.div`
@@ -129,7 +130,7 @@ function SelectClaim() {
       try {
         // POST 요청 보내기
         const response = await axios.post(
-          "https://minsi.pythonanywhere.com/medicarrier/assist/",
+          "http://127.0.0.1:8000/medicarrier/assist/",
           {
             user: userId,
             facility,
@@ -174,16 +175,13 @@ function SelectClaim() {
               hospital_fee: "3만원 미만",
               disease_detail: selected,
               document: "",
-            },
+            }
           });
         } else {
           console.error("Failed to save data:", response.statusText);
         }
       } catch (error) {
-        console.error(
-          "Error saving data:",
-          error.response ? error.response.data : error.message
-        );
+        console.error("Error saving data:", error.response ? error.response.data : error.message);
       }
     }
   };
