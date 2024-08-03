@@ -124,7 +124,7 @@ function SymptomScript() {
 
   const handleNext = async () => {
     try {
-      const response = await axios.post("http://127.0.0.1:8000/medicarrier/script/", {
+      const response = await axios.post("https://minsi.pythonanywhere.com/medicarrier/script/", {
         script: scriptComponents,
       }, {
         headers: {
