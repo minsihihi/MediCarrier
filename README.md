@@ -37,14 +37,14 @@
 
 ### 기능
 - 스크립트 : 환자의 증상을 현지어/영어로 자동 번역
-  ![IMG_5297](https://github.com/user-attachments/assets/6410470f-ab5c-4b3d-873d-373c7a13afa9)
+- ![IMG_5297](https://github.com/user-attachments/assets/6410470f-ab5c-4b3d-873d-373c7a13afa9)
 
 - 메디카드 : 현지어/영어로 번역된 환자의 기본 정보와 의료 정보 제공
-  ![IMG_5298](https://github.com/user-attachments/assets/f1d23edd-0139-4684-b5cc-2f7835ff511f)
+- ![IMG_5298](https://github.com/user-attachments/assets/f1d23edd-0139-4684-b5cc-2f7835ff511f)
 
 - 보험 테스트 : 여행자의 필요성에 맞는 보험 추천
-  ![IMG_5294](https://github.com/user-attachments/assets/89fbe2ff-7a62-4c86-b72d-5c8eb9d502e5)
+- ![IMG_5294](https://github.com/user-attachments/assets/89fbe2ff-7a62-4c86-b72d-5c8eb9d502e5)
 
-- 검색 : 위치 기반 병원 종목별 검색 
-![IMG_5296](https://github.com/user-attachments/assets/6ad44c35-6ad6-456b-9fd6-52495640a6bd)
+- 검색 : 위치 기반 병원 종목별 검색
+- ![IMG_5296](https://github.com/user-attachments/assets/6ad44c35-6ad6-456b-9fd6-52495640a6bd)
 
