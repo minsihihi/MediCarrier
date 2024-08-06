@@ -27,7 +27,11 @@ SECRET_KEY = 'django-insecure-82bi&k1sg4c!@051pblehmtqz^@z7gdl)2kq*m0qnmzp^w-l1)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
+<<<<<<< HEAD
+ALLOWED_HOSTS = ['jieun1234.pythonanywhere.com']
+=======
 ALLOWED_HOSTS = ['minsi.pythonanywhere.com']
+>>>>>>> 78d02c4977c45aac2561d8d5bde57ef180fa5782
 
 AUTH_USER_MODEL = 'api.User'
 
@@ -54,6 +58,16 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+<<<<<<< HEAD
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    'django.middleware.security.SecurityMiddleware',
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+=======
     "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
@@ -62,17 +76,25 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+>>>>>>> 78d02c4977c45aac2561d8d5bde57ef180fa5782
 ]
 
 #CORS_ALLOWED_ORIGINS = [
 #    '*'  # React 개발 서버의 URL
 #]
+CORS_ORGIN_ALLOW_ALL=True
 
+<<<<<<< HEAD
+
+CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_METHODS = (
+=======
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ORIGIN_ALLOW_ALL=True
 CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_METHODS = (  #<-실제 요청에 허용되는 HTTP 동사 리스트
+>>>>>>> 78d02c4977c45aac2561d8d5bde57ef180fa5782
     'DELETE',
     'GET',
     'OPTIONS',
@@ -80,6 +102,21 @@ CORS_ALLOW_METHODS = (  #<-실제 요청에 허용되는 HTTP 동사 리스트
     'POST',
     'PUT',
 )
+<<<<<<< HEAD
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+]
+=======
+>>>>>>> 78d02c4977c45aac2561d8d5bde57ef180fa5782
 
 ROOT_URLCONF = 'server.urls'
 
@@ -175,7 +212,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
