@@ -37,7 +37,7 @@
 
 ### 기능
 - 스크립트 : 환자의 증상을 현지어/영어로 자동 번역
-- ![IMG_5297](https://github.com/user-attachments/assets/6410470f-ab5c-4b3d-873d-373c7a13afa9)
+![IMG_5297](https://github.com/user-attachments/assets/6410470f-ab5c-4b3d-873d-373c7a13afa9)
 
 - 메디카드 : 현지어/영어로 번역된 환자의 기본 정보와 의료 정보 제공
 - ![IMG_5298](https://github.com/user-attachments/assets/f1d23edd-0139-4684-b5cc-2f7835ff511f)
